@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Netflix Slovenia</title>
+    <link rel="stylesheet" href="css/choose-style.css">
+</head>
+<body>
+    <div id="Main">
+    <header>
+        <img src ="slike/Netflix_logo.svg" alt="Netflix Logo" id="logo">
+        <a href="index.html" id="signout">Sign Out</a>
+    </header>
+    <hr>
+    <div id="choose">
+        <img src="slike/checkmark.svg" alt="Checkmark" id="checkmark">
+        <p>Step <b>1</b> of <b>3</b></p>
+        <h1>Choose your plan.</h1>
+        <ul id="list">
+        <li>No commitments, cancel<br>anytime.</li>
+        <li>Everything on Netflix for one<br>low price.</li>
+        <li>No ads and extra fees. Ever.</li>
+        </ul>
+        
+         <button id="next-btn" type="button" class="btn">Next</button>
+<script>
+document.getElementById('next-btn').addEventListener('click', () => {
+  window.location.href = 'plan.html';
+});
+</script>
+    </div>
+    </div>
+    
+</body>
+</html>

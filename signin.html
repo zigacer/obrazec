@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Netflix</title>
+        <link rel="stylesheet" href="css/signin-style.css">
+    </head>
+    <body>
+        <div id="Main">
+        <header>
+            <img src ="slike/Netflix_logo.svg" alt="Netflix Logo" id="logo">
+        </header>
+
+        <div id="signin-div">
+            <div id="signin-form" role="region" aria-label="Sign in panel">
+                <h1>Sign In</h1>
+
+                <input type="email" placeholder="Email or mobile number" id="email">
+                <input type="password" placeholder="Password" id="password">
+
+                <button type="button" id="signin-btn">Sign In</button>
+
+                <div class="alt">
+                    <span class="or">OR</span>
+                    <a href="#" class="code">Use a Sign-In Code</a>
+                </div>
+
+                <a href="#" class="forgot">Forgot password?</a>
+
+                <label class="remember"><input type="checkbox" aria-label="Remember me"> Remember me</label>
+
+                <p class="signup">New to Netflix? <a href="index.html">Sign up now.</a></p>
+
+                <p class="recaptcha">This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#">Learn more.</a></p>
+            </div>
+        </div>
+
+        </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="javascript/signin-validate.js"></script>
+    </body>
+</html>
