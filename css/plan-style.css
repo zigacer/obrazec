@@ -51,7 +51,7 @@ h1{
     padding: 3% 5%;
     display:flex;
     flex-direction: row;
-    gap: 1.4rem;
+    gap: 22px;
     align-items: stretch;
     justify-content: center;
     width: 100%;

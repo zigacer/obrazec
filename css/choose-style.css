@@ -80,9 +80,9 @@ hr{
     align-items: center;
     gap: 8px;
   }
-  #choose h1 { font-size: 1.4rem; text-align: center; margin: 6px 0; }
+  #choose h1 { font-size: 22px; text-align: center; margin: 6px 0; }
   #list { padding: 0 8%; }
-  #list li { margin: 10px 0; font-size: 0.95rem; text-align: center; }
+  #list li { margin: 10px 0; font-size: 15px; text-align: center; }
   #checkmark { width: 40px; height: 40px; }
   #next-btn {
     width: 100%;
