@@ -5,11 +5,7 @@
     font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
-html,body{
-    height:100%;
-    background: #fff;
-    color: #111;
-}
+
 
 header{
     display:flex;
@@ -184,7 +180,9 @@ body > p {
 
 
 
-.plan:hover { cursor: pointer; }
+.plan:hover { 
+    cursor: pointer; 
+}
 .plan.selected {
     border-color: #000; 
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
