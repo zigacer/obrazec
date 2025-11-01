@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: "Helvetica Neue", Arial, sans-serif;
 }
-
+html,body{ height: 100%; }
 
 header{
     display: flex;
@@ -12,9 +12,8 @@ header{
     justify-content: space-between;
     padding: 1.5% 6%;
     position: relative;
-    z-index: 4; 
+    z-index: 4;
 }
-
 
 #logo {
     max-width: 8%;
@@ -29,13 +28,11 @@ header{
       url(../slike/Netflix_background.jpg);
     background-size: cover;
     background-position: center;
-    min-height: 100vh;
+    min-height: 100%;
     color: #fff;
 }
 
-
 #signin-button{
-    
     display: inline-block;
     margin: 0;
     padding: 8px 14px;
@@ -51,41 +48,56 @@ header{
     align-self: center;
 }
 
-
 #Middle{
     text-align: center;
     color: white;
-    margin-top: 20vh;
+    margin-top: 20%;
     padding: 0 3%;
     z-index: 3;
 }
 
-
 #Middle h1{
     color: white;
-    font-size: clamp(36px, 8vw, 96px);
+    font-size: 36px;
     font-weight: 800;
     line-height: 0.95;
-    margin: 0 auto 0.6rem;
+    margin: 0 auto 10px;
     text-shadow: 0 6px 20px rgba(0,0,0,0.7);
     max-width: 1000px;
 }
 
 #Middle h2{
     color: #e6e6e6;
-    font-size: clamp(16px, 2.2vw, 22px);
+    font-size: 16px;
     font-weight: 600;
-    margin-top: 0.6rem;
+    margin-top: 10px;
     text-shadow: 0 3px 10px rgba(0,0,0,0.6);
 }
 
 #Middle p{
     color: #dcdcdc;
-    font-size: clamp(14px, 1.4vw, 16px);
-    margin-top: 1rem;
+    font-size: 14px;
+    margin-top: 16px;
     text-shadow: 0 2px 6px rgba(0,0,0,0.6);
 }
 
+@media (min-width: 600px){
+    #Middle h1{ font-size: 48px; }
+    #Middle h2{ font-size: 18px; }
+}
+@media (min-width: 900px){
+    #Middle h1{ font-size: 64px; }
+    #Middle h2{ font-size: 20px; }
+    #Middle p{ font-size: 15px; }
+}
+@media (min-width: 1200px){
+    #Middle h1{ font-size: 80px; }
+    #Middle h2{ font-size: 22px; }
+    #Middle p{ font-size: 16px; }
+}
+@media (min-width: 1600px){
+    #Middle h1{ font-size: 96px; }
+}
 
 #EmailDiv{
     margin-top: 1.5%;
@@ -100,7 +112,6 @@ header{
     max-width: 980px;
 }
 
-
 #email{
     padding: 16px 20px;
     font-size: 16px;
@@ -110,11 +121,10 @@ header{
     background: rgba(0,0,0,0.55);
     color: #fff;
     border: 1px solid rgba(255,255,255,0.12);
-    border-radius: 6px;
+    border-radius: 8px;
     outline: none;
     box-sizing: border-box;
 }
-
 
 #getstarted-button{
     display: inline-block;
@@ -130,15 +140,13 @@ header{
     margin: 0;
     padding: 0 22px;
     text-align: center;
-    line-height: 56px; 
+    line-height: 56px;
     box-shadow: 0 2px 0 rgba(0,0,0,0.15);
 }
-
 
 #getstarted-button:hover{
    background-color: #c5070f;
 }
-
 
 footer{
     background-color: #000;
@@ -146,7 +154,6 @@ footer{
     position: relative;
     z-index: 2;
 }
-
 
 #BottomUl{
     display: flex;
@@ -168,7 +175,6 @@ footer{
     box-sizing: border-box;
 }
 
-
 footer a{
     text-decoration: underline;
     color: #bfbfbf;
@@ -177,32 +183,19 @@ footer a{
     padding: 0.4% 0;
 }
 
-
 @media (max-width: 900px){
     #logo { max-width: 10%; }
-    
     #email { min-width: 320px; flex: 1 1 60%; max-width: 65%; }
     .BottomLi { flex-basis: 40%; min-width: 30%; }
-
-    #signin{
-        min-width: 20%;
-        padding: 0.7% 0.9%;
-    }
+    #signin{ min-width: 20%; padding: 0.7% 0.9%; }
 }
 @media (max-width: 520px){
     #logo { max-width: 16%; }
-    #Middle { margin-top: 14vh; padding: 0 6%; }
-    #email { width: 100%; max-width: 100%; border-radius: 1vh; }
-    
+    #Middle { margin-top: 12%; padding: 0 6%; }
+    #email { width: 100%; max-width: 100%; border-radius: 8px; }
     #EmailDiv{ flex-direction: column; gap: 12px; align-items: stretch; padding: 0; }
-    #email{ border-radius: 1vh; width: 100%; max-width: 100%; }
-    #getstarted-button{ width: 100%; border-radius: 1vh; min-width: unset; }
-
+    #email{ border-radius: 8px; width: 100%; max-width: 100%; }
+    #getstarted-button{ width: 100%; border-radius: 8px; min-width: unset; }
     .BottomLi { flex-basis: 100%; min-width: 100%; }
-
-    #signin-button{
-        min-width: 34%;
-        padding: 0.8% 1%;
-        border-radius: 1vh;
-    }
+    #signin-button{ min-width: 34%; padding: 0.8% 1%; border-radius: 8px; }
 }
