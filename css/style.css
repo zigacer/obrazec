@@ -51,7 +51,7 @@ header{
 #Middle{
     text-align: center;
     color: white;
-    margin-top: 20%;
+    margin-top: 10%;
     padding: 0 3%;
     z-index: 3;
 }
@@ -198,4 +198,5 @@ footer a{
     #getstarted-button{ width: 100%; border-radius: 8px; min-width: unset; }
     .BottomLi { flex-basis: 100%; min-width: 100%; }
     #signin-button{ min-width: 34%; padding: 0.8% 1%; border-radius: 8px; }
+
 }
