@@ -186,8 +186,8 @@ footer a{
 @media (max-width: 900px){
     #logo { max-width: 10%; }
     #email { min-width: 320px; flex: 1 1 60%; max-width: 65%; }
-    .BottomLi { flex-basis: 40%; min-width: 30%; }
-    #signin{ min-width: 20%; padding: 0.7% 0.9%; }
+    .BottomLi { width: 40%; min-width: 30%; }
+    #signin-button { min-width: 20%; padding: 0.7% 0.9%; }
 }
 @media (max-width: 520px){
     #logo { max-width: 16%; }
@@ -196,7 +196,6 @@ footer a{
     #EmailDiv{ flex-direction: column; gap: 12px; align-items: stretch; padding: 0; }
     #email{ border-radius: 8px; width: 100%; max-width: 100%; }
     #getstarted-button{ width: 100%; border-radius: 8px; min-width: unset; }
-    .BottomLi { flex-basis: 100%; min-width: 100%; }
+    .BottomLi { width: 100%; min-width: 100%; }
     #signin-button{ min-width: 34%; padding: 0.8% 1%; border-radius: 8px; }
-
 }
