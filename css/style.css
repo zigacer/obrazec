@@ -12,7 +12,7 @@ header{
     justify-content: space-between;
     padding: 1.5% 6%;
     position: relative;
-    z-index: 4;
+    
 }
 
 #logo {
@@ -53,7 +53,7 @@ header{
     color: white;
     margin-top: 10%;
     padding: 0 3%;
-    z-index: 3;
+    
 }
 
 #Middle h1{
@@ -152,7 +152,7 @@ footer{
     background-color: #000;
     padding: 3% 6%;
     position: relative;
-    z-index: 2;
+    
 }
 
 #BottomUl{
