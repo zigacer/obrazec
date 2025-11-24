@@ -35,6 +35,7 @@
             const selected = document.querySelector('#main .plan.selected');
             if (!selected) {
                 Swal.fire({
+                    confirmButtonColor: '#e50914',
                     icon: 'warning',
                     title: 'No plan selected',
                     text: 'Please select a plan before continuing.',
@@ -48,6 +49,7 @@
             }
 
             Swal.fire({
+                confirmButtonColor: '#e50914',
                 icon: 'success',
                 title: 'Plan selected',
                 text: 'Redirecting...',

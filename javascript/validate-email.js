@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (!value) {
             Swal.fire({
+                confirmButtonColor: '#e50914',
                 icon: 'error',
                 title: 'Missing email',
                 text: 'Please enter your email address.'
@@ -20,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (!emailRe.test(value)) {
             Swal.fire({
+                confirmButtonColor: '#e50914',
                 icon: 'error',
                 title: 'Invalid email',
                 text: 'Please enter a valid email (example@example.com).'
@@ -30,6 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
        
         const href = getstarted.getAttribute('href') || 'choose.html';
         Swal.fire({
+            confirmButtonColor: '#e50914',
             icon: 'success',
             title: 'Email OK',
             text: 'Redirecting...'
