@@ -99,6 +99,7 @@
 
     if (success) {
       Swal.fire({
+        confirmButtonColor: '#e50914',
         icon: 'success',
         title: 'All set',
         html: 'Your account is ready to go!',
@@ -106,6 +107,7 @@
       });
     } else {
       Swal.fire({
+        confirmButtonColor: '#e50914',
         icon: 'warning',
         title: 'Please fix the following',
         html: formatErrorsHtml(errors),
