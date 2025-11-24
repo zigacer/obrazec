@@ -3,9 +3,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Helvetica Neue", Arial, sans-serif;
+		
 }
 html,body{ height: 100%; }
-
 header{
     display: flex;
     align-items: center;
@@ -23,13 +23,13 @@ header{
 }
 
 #Main{
-    background-image:
-      linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-      url(../slike/Netflix_background.jpg);
-    background-size: cover;
-    background-position: center;
-    min-height: 100%;
-    color: #fff;
+        background-image:
+            linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+            url(../slike/Netflix_background.jpg);
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+        color: #fff;
 }
 
 #signin-button{
