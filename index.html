@@ -35,7 +35,7 @@ document.getElementById('signin-button').addEventListener('click', () => {
         
         <ul id="BottomUl">
            
-            <li class="BottomLi"><a href="#">Help Center</a></li>
+            <li class="BottomLi"><a href="#" id="credits-link">Credits</a></li> 
             <li class="BottomLi"><a href="#">Terms of Use</a></li>
             <li class="BottomLi"><a href="#">Privacy</a></li>
             <li class="BottomLi"><a href="#">Corporate Information</a></li> 
@@ -47,7 +47,10 @@ document.getElementById('signin-button').addEventListener('click', () => {
     
    </footer>
    
-   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-   <script src="javascript/validate-email.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+document.addEventListener('DOMContentLoaded',function(){var c=document.getElementById('credits-link');if(c&&window.Swal){c.addEventListener('click',function(e){e.preventDefault();Swal.fire({confirmButtonColor: '#e50914',title:'Credits',html:'<strong>Avtor: </strong> Žiga Černe Bralić<br>',icon:'info',confirmButtonText:'Close'});});}});
+    </script>
+    <script src="javascript/validate-email.js"></script>
 </body>
 </html>
