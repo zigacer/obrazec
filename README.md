@@ -12,7 +12,7 @@ Ta projekt predstavlja repliko sistema prijave in registracije Netflixa, izdelan
 
 ---
 
-## 📸 Predogled aplikacije
+## 📸 Predogled strani
 
 ### 🏠 Začetna stran
 <img width="800" src="https://github.com/user-attachments/assets/5b353171-7445-448e-8662-a3fb6a814bf4"/>
