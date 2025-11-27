@@ -17,6 +17,7 @@
         <div id="main">
             <p>Step <b>3</b> of <b>3</b></p>
             <h1>Set up your credit or debit<br>card</h1>
+            <form id="payment-form" novalidate>
             <input type="text" id="card-number" name="card-number" inputmode="numeric" maxlength="19" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" placeholder="Card Number">
 
             <div id="expiry-cvv">
@@ -34,7 +35,8 @@
             <input type="checkbox" id="agree">
             <label for="agree">I agree.</label>
             </div>
-            <button id="start-membership">Start Membership</button>
+            <input type="submit" id="start-membership" value="Start Membership">
+            </form>
         </div>
        
     </body>

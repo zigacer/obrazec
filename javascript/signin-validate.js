@@ -2,14 +2,13 @@
 document.addEventListener('DOMContentLoaded', () => {
     const email = document.getElementById('email');
     const password = document.getElementById('password');
-    const signinBtn = document.getElementById('signin-btn');
+    const form = document.getElementById('signin-form');
 
-    if (!email || !password || !signinBtn) return;
+    if (!email || !password || !form) return;
 
     const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    const passRe = /^(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z0-9]).{6,}$/;
 
-    signinBtn.addEventListener('click', (e) => {
+    form.addEventListener('submit', (e) => {
         e.preventDefault();
 
         const mail = (email.value || '').trim();
@@ -28,22 +27,31 @@ document.addEventListener('DOMContentLoaded', () => {
             Swal.fire({confirmButtonColor: '#e50914', icon: 'error', title: 'Missing password', text: 'Please enter your password.' }).then(() => password.focus());
             return;
         }
-        if (!passRe.test(pass)) {
+
+        
+        // Check hardcoded credentials
+        const VALID_EMAIL = 'zigacb@gmail.com';
+        const VALID_PASS = 'Admin123!';
+
+        if (mail === VALID_EMAIL && pass === VALID_PASS) {
+            Swal.fire({
+                confirmButtonColor: '#e50914',
+                icon: 'success',
+                title: 'Signed in',
+                text: 'Redirecting to Netflix...',
+                
+            }).then(() => {
+                window.location.href = 'https://www.netflix.com';
+            });
+            // fallback redirect after timer in case then() isn't called
+            setTimeout(() => { window.location.href = 'https://www.netflix.com'; }, 1200);
+        } else {
             Swal.fire({
                 confirmButtonColor: '#e50914',
                 icon: 'error',
-                title: 'Weak password',
-                html: 'Password must be at least 6 characters and include:<br>- an uppercase letter<br>- a number<br>- a special character'
+                title: 'Invalid credentials',
+                text: 'Email or password incorrect.'
             }).then(() => password.focus());
-            return;
         }
-
-        
-        Swal.fire({
-            confirmButtonColor: '#e50914',
-            icon: 'success',
-            title: 'You are signed in',
-            showConfirmButton: true
-        });
     });
 });

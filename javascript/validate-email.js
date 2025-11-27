@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
     const email = document.getElementById('email');
-    const getstarted = document.getElementById('getstarted-button');
+    const form = document.getElementById('email-form');
     const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    if (!getstarted || !email) return;
+    if (!form || !email) return;
 
-    getstarted.addEventListener('click', (e) => {
+    form.addEventListener('submit', (e) => {
         e.preventDefault(); 
         const value = (email.value || '').trim();
 
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
        
-        const href = getstarted.getAttribute('href') || 'choose.html';
+        const href = form.getAttribute('action') || 'choose.html';
         Swal.fire({
             confirmButtonColor: '#e50914',
             icon: 'success',
