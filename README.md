@@ -1,13 +1,50 @@
-To je replika prijave/registracije Netflix-a za 1. projektno nalogo pri predmetu NSA. Uporabljen je HTML, CSS in Javascript
-(za preverjanje mailov, gesel...). Spodaj je par slik: 
+# 🎬 Netflix – Replika Prijave in Registracije  
+**Projektna naloga pri predmetu NSA**
 
-<b>Začetna stran</b>
-<img width="1902" height="946" alt="image" src="https://github.com/user-attachments/assets/5b353171-7445-448e-8662-a3fb6a814bf4" />
-<b>Prijava</b>
-<img width="1915" height="945" alt="image" src="https://github.com/user-attachments/assets/dd3c6e3d-57a1-4351-9f42-f83ab8db6323" />
-<b>Izbira plana</b>
-<img width="1905" height="949" alt="image" src="https://github.com/user-attachments/assets/e57e5cd9-15b1-46d0-983d-d3eb1fb00c6d" />
-<b>Plačilo</b>
-<img width="1917" height="947" alt="image" src="https://github.com/user-attachments/assets/b38ed9b1-ac81-48ab-bfe2-6fec3155610f" />
+Ta projekt predstavlja repliko sistema prijave in registracije Netflixa, izdelanega v okviru 1. projektne naloge pri predmetu **NSA**. Uporabljene so osnove **HTML**, **CSS** in **JavaScript**, pri čemer je poudarek na validaciji vnosov (e-pošta, geslo, izbira naročniškega plana, plačilni podatki …) ter uporabniški izkušnji, ki je vizualno in funkcionalno podobna originalnemu Netflixu.
+
+---
+
+## 🔧 Uporabljene tehnologije
+- **HTML5** – struktura spletnih strani  
+- **CSS3** – stiliranje po vzoru Netflixovega dizajna  
+- **JavaScript** – validacija e-poštnih naslovov, gesel in ostalih obrazcev  
+
+---
+
+## 📸 Predogled aplikacije
+
+### 🏠 Začetna stran
+<img width="800" src="https://github.com/user-attachments/assets/5b353171-7445-448e-8662-a3fb6a814bf4"/>
+
+### 🔐 Prijava
+<img width="800" src="https://github.com/user-attachments/assets/dd3c6e3d-57a1-4351-9f42-f83ab8db6323"/>
+
+### 📦 Izbira naročniškega paketa
+<img width="800" src="https://github.com/user-attachments/assets/e57e5cd9-15b1-46d0-983d-d3eb1fb00c6d"/>
+
+### 💳 Plačilo
+<img width="800" src="https://github.com/user-attachments/assets/b38ed9b1-ac81-48ab-bfe2-6fec3155610f"/>
+
+---
+
+## ✨ Funkcionalnosti
+✔ Validacija e-poštnih naslovov  
+✔ Preverjanje gesel (dolžina, posebni znaki …)  
+✔ Večkorakovni registracijski proces  
+✔ Izbira naročniškega plana  
+✔ Vnos plačilnih podatkov  
+✔ Vizualni dizajn, podoben Netflixu  
+
+---
+
+## 📚 Namen projekta
+Projekt je pripravljen za izobraževalne namene pri predmetu **NSA**. Ni povezan z Netflixom in ne uporablja nobenih uradnih API-jev ali pravih podatkov.
+
+---
+
+## 👤 Avtor
+**Žiga Černe Bralič**  
+Dijak pri predmetu **NSA**
 
 
