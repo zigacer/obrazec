@@ -1,7 +1,7 @@
-<p align="center">
-  <h1>🎬 Netflix – Replika Prijave in Registracije</h1>
+
+  <h1 align="center">🎬 Netflix – Replika Prijave in Registracije</h1>
   <strong>Projektna naloga pri predmetu NSA</strong>
-</p>
+
 
 Ta projekt predstavlja repliko sistema prijave in registracije Netflixa, izdelanega v okviru 1. projektne naloge pri predmetu **NSA**. Uporabljene so osnove **HTML**, **CSS** in **JavaScript**, pri čemer je poudarek na validaciji vnosov (e-pošta, geslo, izbira naročniškega plana, plačilni podatki …) ter uporabniški izkušnji, ki je vizualno in funkcionalno podobna originalnemu Netflixu.
 
