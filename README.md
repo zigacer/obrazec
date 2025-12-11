@@ -55,7 +55,7 @@ Projekt je pripravljen za izobraževalne namene pri predmetu **NSA**. Ni povezan
 
 ## 👤 Avtor
 
-<p align="center">
+
   <b>Žiga Černe Bralič</b><br>
   Dijak pri predmetu <b>NSA</b>
-</p>
+
