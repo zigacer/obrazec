@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         
         // Check hardcoded credentials
-        const VALID_EMAIL = 'zigacb@gmail.com';
+        const VALID_EMAIL = 'test@test.com';
         const VALID_PASS = 'Admin123!';
 
         if (mail === VALID_EMAIL && pass === VALID_PASS) {
@@ -54,4 +54,5 @@ document.addEventListener('DOMContentLoaded', () => {
             }).then(() => password.focus());
         }
     });
+
 });
